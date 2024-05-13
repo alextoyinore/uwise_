@@ -21,7 +21,7 @@ const Footer = () => {
             <Link href={'/blog'} className="hover:underline">Blog</Link>
             <Link href={'/support'} className="hover:underline">Help & Support</Link>
             <Link href={'/faqs'} className="hover:underline">FAQs</Link>
-            <Link href={'/affliate'} className="hover:underline">Affliates</Link>
+            <Link href={'/affiliate'} className="hover:underline">Affliates</Link>
         </nav>
         <nav className="flex flex-col gap-2 text-[13px]">
             <Link href={'/terms'} className="hover:underline">Terms</Link>
