@@ -5,10 +5,8 @@ import Link from "next/link";
 import Logo from "@/public/images/logo.svg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Input } from "./ui/input";
-import MainSearchBar from "./MainSearchBar";
 import SearchBar from "./SearchBar";
-import { Aperture, Handshake, Layers, MessageCircleQuestion, Notebook, WholeWordIcon } from "lucide-react";
+import { Aperture, Handshake, Layers, MessageCircleQuestion, Notebook } from "lucide-react";
 
 export default function Navbar() {
   return (
