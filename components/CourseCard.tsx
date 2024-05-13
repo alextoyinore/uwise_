@@ -22,7 +22,8 @@ const CourseCard = () => {
       </div>
       <hr className="my-2" />
       <p className="text-gray-700 text-sm font-bold leading-6">
-        Cybersecurity Fundamentals: Introduction to Information Security
+        {/* Maximum of 65 characters to be set on this */}
+        Cybersecurity Fundamentals: Introduction to Information Security 
       </p>
       <hr className="my-2" />
       <p className="flex items-center text-sm text-gray-500">

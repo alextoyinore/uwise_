@@ -29,7 +29,7 @@ import Newsletter from "@/components/Newsletter";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-[80%] m-[auto]">
+    <main className="min-h-screen">
       <Hero />
       <section className="flex mt-20 justify-between ">
         <div className="w-[70%]">
@@ -162,10 +162,6 @@ export default function Home() {
           <Mail /> Newsletter
         </h2>
         <Newsletter />
-      </section>
-
-      <section className="bg-blue-1 rounded-lg my-10 p-5 text-white">
-        <Footer />
       </section>
     </main>
   );
