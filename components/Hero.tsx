@@ -17,7 +17,7 @@ const Hero = () => {
     <section className="flex justify-between items-center my-8">
       <div className="w-[50%]">
         <h1 className="text-[2em] pr-[50px] font-bold text-blue-1">
-          Let's make <span className="text-green-1">working</span> knowledge and skill accessible and affordable
+          Let&apos;s make <span className="text-green-1">working</span> knowledge and skill accessible and affordable
         </h1>
       </div>
       <div className="w-[50%]">

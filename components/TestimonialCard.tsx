@@ -10,8 +10,8 @@ const TestimonialCard = () => {
       </p>
       <div className="flex flex-col gap-5">
         <p className="text-[16px] text-gray-600 italic">
-          "I found Uwise when I needed a real career change. A friend told me
-          about it before it became mega when they just started."
+          &quote;I found Uwise when I needed a real career change. A friend told me
+          about it before it became mega when they just started.&quote;
         </p>
         <p className="flex gap-2 text-[12px] text-green-1">
           <span className="text-red-1">Alexander Ore</span> March 2024
