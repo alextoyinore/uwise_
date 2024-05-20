@@ -1,41 +1,83 @@
 import React from "react";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import { Star } from "lucide-react";
 import Link from "next/link";
 
-const CourseCard = () => {
+interface CourseCardProps {
+  logoUrl?: string;
+  firstName: string;
+  lastName: string;
+  organization: string;
+  courseTitle: string;
+  description: string;
+  rating: number;
+  price: number;
+  link: string;
+  image: string
+}
+
+const CourseCard = ({
+  logoUrl,
+  firstName,
+  lastName,
+  organization,
+  courseTitle,
+  description,
+  rating,
+  price,
+  link,
+  image
+}: CourseCardProps) => {
   return (
-    <Link href='/' className="w-[250px] h-[250px] rounded-2xl bg-gray-50 py-5 px-5 flex flex-col hover:bg-gray-100 hover:cursor-pointer">
+    <Link
+      href={link}
+      className="w-[200px] h-auto border-gray-600 flex flex-col rounded-xl cursor-pointer"
+    >
+      <Image 
+        className="rounded-lg mb-2"
+        src={image}
+        alt={image}
+        width={200}
+        height={130}
+      />
       <div className="flex gap-2 content-center">
-        <Image
-          className="rounded-full"
-          src="/images/uwise_c.svg"
-          alt=""
-          width={35}
-          height={35}
-        />
+        {logoUrl ? (
+          <Image
+            className="rounded-full w-[35px] h-[35px]"
+            src={logoUrl!}
+            alt={organization}
+            width={35}
+            height={35}
+          />
+        ) : (
+          <div className="text-md p-1 bg-blue-1 text-white rounded-full w-[35px] h-[35px] text-center">
+            {firstName.charAt(0)}
+            {lastName.charAt(0)}
+          </div>
+        )}
         <div className="flex flex-col">
-          <p className="text-[14px] text-blue-1">Alexander Ore</p>
-          <p className="text-[10px] text-green-1">Uwise Learning</p>
+          <p className="text-sm text-blue-1">
+            {firstName} {lastName}
+          </p>
+          <p className="text-[12px] text-green-1">{organization}</p>
         </div>
       </div>
       <hr className="my-2" />
-      <p className="text-gray-700 text-sm font-bold leading-6">
+      <p className="text-gray-700 text-sm font-bold leading-5">
         {/* Maximum of 65 characters to be set on this */}
-        Cybersecurity Fundamentals: Introduction to Information Security 
+        {courseTitle}
       </p>
+      {/* <hr className="my-2" />
+      <p className="text-sm">{description}</p> */}
       <hr className="my-2" />
       <p className="flex items-center text-sm text-gray-500">
-        4.0
-        &nbsp;
-        {Array.from({ length: 4 }).map((_, index) => (
+        Rating: {Math.fround(rating)} &nbsp;
+        {Array.from({ length: Math.floor(rating) }).map((_, index) => (
           <Star key={index} width={15} height={15} color="green" />
         ))}
       </p>
       <hr className="my-2" />
-      <p className="text-red-1  text-[16px] ">&#8358; 50,000</p>
-      {/* <Button className='text-blue-1 bg-white rounded-3xl w-full'>Enroll</Button> */}
+      <p className="text-red-1  text-[16px] ">&#8358; {price.toString()}</p>
     </Link>
   );
 };
