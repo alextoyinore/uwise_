@@ -5,14 +5,14 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <div><section className="my-10">
+    <div><section className="">
     <Link href={"/explore/categories"}>
       <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
         <Layers /> Categories
       </h2>
     </Link>
 
-    <div className="flex flex-wrap justify-between my-5">
+    <div className="flex flex-wrap gap-5 my-5">
       {categories.map((category, index) => (
         <div key={index}>
           <CategoryCard

@@ -1,36 +1,43 @@
-import { requests } from '@/data/local/requests'
-import { Link, MessageCircleQuestion } from 'lucide-react'
-import React from 'react'
-import Request from '@/components/Request'
+import { requests } from "@/data/local/requests";
+import { Link, MessageCircleQuestion } from "lucide-react";
+import React from "react";
+import Request from "@/components/Request";
+import RequestItem from "@/components/RequestItem";
+import { cn } from "@/lib/utils";
 
 const RequestHome = () => {
   return (
-    <div><div className="w-[30%] rounded-2xl border-gray-700">
-    <Link href={"/request"}>
+    <div>
+      <p className="text-gray-400 my-3">Total Requests: {requests.length}</p>
+      <div className="w-full flex flex-col">
+        {/* <Link href={"/request"}>
       <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
         <MessageCircleQuestion /> Requests
       </h2>
-    </Link>
+    </Link> */}
 
-    {requests.map((request, index) => (
-      <article
-        key={index}
-        className="flex flex-col gap-3 my-5 cursor-pointer rounded-2xl border-2 border-gray-700 p-3 hover:border-green-1"
-      >
-        <Request
-          logoUrl={request.logoUrl}
-          firstName={request.firstName}
-          lastName={request.lastName}
-          organization={request.organization}
-          requested={request.request}
-          location={request.location}
-          budget={request.budget}
-        />
-        {/* <hr className="my-1 border-gray-300"/> */}
-      </article>
-    ))}
-  </div></div>
-  )
-}
+        {requests.map((request, index) => (
+          <div
+            key={index}
+            className={cn("cursor-pointer p-3 border-b-[1px] border-gray-50 hover:bg-gray-50", {
+              "bg-white": index % 2 == 0,
+            })}
+          >
+            <RequestItem
+              logoUrl={request.logoUrl}
+              firstName={request.firstName}
+              lastName={request.lastName}
+              organization={request.organization}
+              requested={request.request}
+              location={request.location}
+              budget={request.budget}
+              link={request.link}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default RequestHome
+export default RequestHome;

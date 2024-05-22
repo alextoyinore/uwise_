@@ -63,6 +63,45 @@
         link: '/course/french-for-beginners-intermediate-speakers-and-advanced-learners',
         organization: 'Fan Augustine Language School',
         image: '/images/courses/5.jpg'
+    },
+    {
+        id: 6,
+        // logoUrl: '/images/uwise.svg',
+        firstName: 'David',
+        lastName: 'Shwimmer',
+        courseTitle: 'French for Beginners, Intermediate Speakers and Advanced Learners',
+        description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
+        rating: 4,
+        price: 50000,
+        link: '/course/french-for-beginners-intermediate-speakers-and-advanced-learners',
+        organization: 'David Shwimmer Coding School',
+        image: '/images/courses/6.jpg'
+    },
+    {
+        id: 7,
+        // logoUrl: '/images/uwise.svg',
+        firstName: 'Fan',
+        lastName: 'Augustine',
+        courseTitle: 'French for Beginners, Intermediate Speakers and Advanced Learners',
+        description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
+        rating: 5,
+        price: 150000,
+        link: '/course/french-for-beginners-intermediate-speakers-and-advanced-learners',
+        organization: 'Fan Augustine Language School',
+        image: '/images/courses/7.jpg'
+    },
+    {
+        id: 8,
+        // logoUrl: '/images/uwise.svg',
+        firstName: 'Caleb',
+        lastName: 'Omojuwa',
+        courseTitle: 'Advanced Django for Web Developers',
+        description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
+        rating: 4,
+        price: 70000,
+        link: '/course/advanced-django-for-web-developers',
+        organization: 'Caleb Omojuwa School',
+        image: '/images/courses/8.jpg'
     }
 ]
 

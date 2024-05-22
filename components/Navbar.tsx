@@ -15,7 +15,8 @@ import {
   Notebook,
   Presentation,
 } from "lucide-react";
-import NavLinks from "./NavLinks";
+import NavLink from "./NavLink";
+import { navlinks } from "@/data/local/navlinks";
 
 export default function Navbar() {
   return (
@@ -27,7 +28,16 @@ export default function Navbar() {
         {/**
          * Nav Links
          */}
-        <NavLinks />
+        <div className="flex flex-col gap-1 text-[14px] text-gray-700">
+          {navlinks.map((navlink, index) => (
+            <NavLink
+              key={index}
+              icon={navlink.icon}
+              title={navlink.title}
+              link={navlink.link}
+            />
+          ))}{" "}
+        </div>
       </div>
       <div className="flex flex-col gap-2">
         <Link

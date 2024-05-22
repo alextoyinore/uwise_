@@ -6,7 +6,8 @@ export const requests = [
         organization: 'United Technologies Limited',
         request: 'React and Python Django',
         budget: 75000,
-        location: 'Epe, Lagos'
+        location: 'Epe, Lagos',
+        link: 'tope-james-react-and-python-django-19-05-2024'
     },
     {
         logoUrl: '/images/uwise_b.svg',
@@ -15,7 +16,8 @@ export const requests = [
         organization: 'Adex Cranes Company Limited',
         request: 'Shoe making, Fashion Design, and Bags',
         budget: 120000,
-        location: 'Akure, Ondo'
+        location: 'Akure, Ondo',
+        link: 'oluwadamilare-babalola-shoe-making-fashion-design-and-bags-19-05-2024'
     },
     {
         logoUrl: '/images/uwise_c.svg',
@@ -24,6 +26,8 @@ export const requests = [
         organization: 'Holy Trinity Enterprises',
         request: 'Beads making, cooking continental and oriental dishes',
         budget: 75000,
-        location: 'Ikot Ekpene, Cross River'
+        location: 'Ikot Ekpene, Cross River',
+        link: 'akpan-bisom-beads-making-cooking-continental-and-oriental-dishes-19-05-2024'
     }
 ]
+
