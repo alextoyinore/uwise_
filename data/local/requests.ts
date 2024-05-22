@@ -28,6 +28,16 @@ export const requests = [
         budget: 75000,
         location: 'Ikot Ekpene, Cross River',
         link: 'akpan-bisom-beads-making-cooking-continental-and-oriental-dishes-19-05-2024'
+    },
+    {
+        logoUrl: '/images/uwise_b.svg',
+        firstName: 'David',
+        lastName: 'Culper',
+        organization: 'Culper Furnitures',
+        request: '3-legged stools, japanese wood-fitting technique',
+        budget: 20000,
+        location: 'Benue, Benue',
+        link: '3-legged-stools-japanese-wood-fitting-technique-19-05-2024'
     }
 ]
 

@@ -12,7 +12,7 @@ const Categories = () => {
       </h2>
     </Link>
 
-    <div className="flex flex-wrap gap-5 my-5">
+    <div className="flex flex-wrap gap-5">
       {categories.map((category, index) => (
         <div key={index}>
           <CategoryCard

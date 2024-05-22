@@ -19,7 +19,7 @@ const RequestHome = () => {
         {requests.map((request, index) => (
           <div
             key={index}
-            className={cn("cursor-pointer p-3 border-b-[1px] border-gray-50 hover:bg-gray-50", {
+            className={cn("cursor-pointer p-4 border-b-[1px] border-gray-50 hover:bg-gray-50", {
               "bg-white": index % 2 == 0,
             })}
           >

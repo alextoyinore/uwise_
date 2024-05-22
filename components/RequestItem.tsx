@@ -48,10 +48,16 @@ const Request = ({
       &nbsp;
       <span className="text-green-1 w-1/6">{location}</span> &nbsp;
       <span className="w-2/6">
-        Wants to learn: <span className="font-semibold text-blue-1">{requested}</span>.
+        Wants to learn:{" "}
+        <span className="font-semibold text-blue-1">{requested}</span>.
       </span>
       <span className="text-red-1 w-1/6 font-bold">&#8358; {budget}</span>
-      <Link href={"/request/" + link} className="bg-green-1 text-white p-3 rounded-full w-1/6 text-center hover:bg-white hover:text-green-1 hover:font-bold">Pick up</Link>
+      <Link
+        href={"/request/" + link}
+        className="bg-green-1/80 text-white p-3 rounded-full w-1/6 text-center hover:bg-green-1 hover:text-white hover:font-bold border-[1px] border-green-1/20"
+      >
+        Pick up
+      </Link>
     </div>
   );
 };
