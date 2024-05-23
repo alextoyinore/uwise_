@@ -20,7 +20,7 @@ const Home = () => {
        * LATEST COURSES
        */}
 
-      <section className="flex my-5">
+      <section className="flex flex-col my-5">
         <div className="">
           <Link href={"/explore"}>
             <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
@@ -76,7 +76,7 @@ const Home = () => {
       {/**
        * BIG INFO
        */}
-      <section className="my-10">
+      <section className="my-5">
         <Link href={""}>
           <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
             <Group /> Do More with Uwise
@@ -131,3 +131,4 @@ const Home = () => {
 };
 
 export default Home;
+

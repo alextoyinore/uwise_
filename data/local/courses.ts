@@ -56,7 +56,7 @@
         // logoUrl: '/images/uwise.svg',
         firstName: 'Fan',
         lastName: 'Augustine',
-        courseTitle: 'French for Beginners, Intermediate Speakers and Advanced Learners',
+        courseTitle: 'JavaScript Fundamentals for Beginners',
         description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
         rating: 4,
         price: 120000,
@@ -69,7 +69,7 @@
         // logoUrl: '/images/uwise.svg',
         firstName: 'David',
         lastName: 'Shwimmer',
-        courseTitle: 'French for Beginners, Intermediate Speakers and Advanced Learners',
+        courseTitle: 'Building RESTful APIs with Django Rest Framework',
         description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
         rating: 4,
         price: 50000,
@@ -82,7 +82,7 @@
         // logoUrl: '/images/uwise.svg',
         firstName: 'Fan',
         lastName: 'Augustine',
-        courseTitle: 'French for Beginners, Intermediate Speakers and Advanced Learners',
+        courseTitle: 'Cybersecurity Fundamentals: Introduction to Information Security',
         description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
         rating: 5,
         price: 150000,
@@ -105,3 +105,83 @@
     }
 ]
 
+
+export const explorelist = [
+    {
+        subject: 'Software Engineering',
+        subjectlink: '/subject/software-enginerring',
+        courses: [
+            {
+                id: 1,
+                logoUrl: '/images/uwise_c.svg',
+                lastName: 'Alexander',
+                firstName: 'Ore',
+                courseTitle: 'Graphics Design Introduction: Elements, Theories, and Business',
+                description: 'In this course, you will learn the rudiments of creating digital visually appealing designs',
+                rating: 3,
+                price: 50000,
+                link: '/course/graphics-design-introduction-elements-theories-business',
+                organization: 'Uwise Learning',
+                image: '/images/courses/1.jpg'
+            },
+            {
+                id: 2,
+                logoUrl: '/images/uwise_b.svg',
+                firstName: 'Ademola',
+                lastName: 'Bumbo',
+                courseTitle: 'Cybersecurity in 2024: Fundamentals and Latest Trends in Securing Digital Space',
+                description: 'This course will introduce you the the fundamentals of Cybersecurity and latest rends in securing the digital space',
+                rating: 4,
+                price: 100000,
+                link: '/course/cybersecurity-in-2024-fundamentals-and-latest-tends-in-securing-digital-space',
+                organization: 'Lagos Tech School',
+                image: '/images/courses/2.jpg'
+            },
+            {
+                id: 3,
+                logoUrl: '/images/uwise_b.svg',
+                firstName: 'Ademola',
+                lastName: 'Bumbo',
+                courseTitle: 'Advanced Web Development with Python and Flask',
+                description: 'This course will introduce you the the fundamentals of Cybersecurity and latest rends in securing the digital space',
+                rating: 4,
+                price: 100000,
+                link: '/course/cybersecurity-in-2024-fundamentals-and-latest-tends-in-securing-digital-space',
+                organization: 'Lagos Tech School',
+                image: '/images/courses/7.jpg'
+            },
+        ]
+    },
+    {
+        subject: 'Fashion',
+        subjectlink: '/subject/fashion',
+        courses: [
+            {
+                id: 1,
+                logoUrl: '/images/uwise_c.svg',
+                lastName: 'Comfort',
+                firstName: 'Ore',
+                courseTitle: 'Tailoring from Zero to Advanced',
+                description: 'In this course, you will learn the rudiments of creating digital visually appealing designs',
+                rating: 3,
+                price: 50000,
+                link: '/course/tailoring-from-zero-to-advanced',
+                organization: 'Royal Stiches Academy',
+                image: '/images/courses/4.jpg'
+            },
+            {
+                id: 2,
+                logoUrl: '/images/uwise_b.svg',
+                firstName: 'Dami',
+                lastName: 'Giwa',
+                courseTitle: 'Ready-made sowing from start to finish',
+                description: 'This course will introduce you the the fundamentals of Cybersecurity and latest rends in securing the digital space',
+                rating: 4,
+                price: 100000,
+                link: '/course/cybersecurity-in-2024-fundamentals-and-latest-tends-in-securing-digital-space',
+                organization: 'Lagos Tech School',
+                image: '/images/courses/5.jpg'
+            },
+        ]
+    }
+]

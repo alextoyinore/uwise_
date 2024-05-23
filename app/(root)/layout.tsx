@@ -28,8 +28,8 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
           {/* Search Bar */}
           <div className="py-3 border-b-[1px] border-gray-50 w-full">
             <div className="m-[auto] w-[95%] flex gap-5">
-              <h1 className="w-[20%] font-bold text-blue-1 text-lg leading-5">
-                Find a course or make a request
+              <h1 className="w-[20%] text-blue-1 text-sm leading-5">
+                Find a course or post a new request
               </h1>
               <div className="w-[80%]">
                 <SearchBar />

@@ -43,17 +43,17 @@ const BigInfo = ({
           height={imageHeight}
         />
         <div className="flex flex-col p-5 rounded-r-2xl">
-          <p className="text-blue-1 text-lg leading-6">
+          <p className="text-blue-1 text-sm font-semibold leading-6">
             {description}
           </p>
-          <ul className="text-[12px] text-gray-500 my-2 px-5">
+          <ul className="text-[11px] text-gray-500 my-2 px-5">
             {listItem.map((item, index) => (
               <li key={index} className="my-1 list-disc">
                 {item}
               </li>
             ))}
           </ul>
-          <p className=" text-red-1 text-[14px] rounded-full w-[50%]">
+          <p className=" text-red-1 text-[12px] rounded-full w-[50%]">
             Learn more...
           </p>
         </div>

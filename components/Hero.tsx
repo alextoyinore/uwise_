@@ -18,8 +18,8 @@ const Hero = () => {
   return (
     <section className="flex justify-between items-center">
       <div className="w-[50%]">
-        <h1 className="text-[1.5em] pr-[50px] font-bold text-blue-1 leading-8">
-          Let&apos;s make <span className="text-green-1">knowledge</span> and skills accessible and affordable
+        <h1 className="text-[1.5em] pr-[50px] text-blue-1 leading-8">
+          Let&apos;s make <span className="text-green-1">knowledge</span> and <span className="text-green-1">skills</span> accessible and affordable
         </h1>
       </div>
       <div className="w-[50%]">
@@ -34,11 +34,11 @@ const Hero = () => {
             {Array.from({ length: 4 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg object-cover w-[100%] h-[100%]"
                   src={`/images/carousel/slider` + (index + 1) + `.svg`}
                   alt=""
-                  width={800}
-                  height={50}
+                  width={0}
+                  height={0}
                 />
               </CarouselItem>
             ))}

@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 const Newsletter = () => {
   return (
     <div className="flex flex-col my-5">
-          <p className="w-full font-semibold text-xl text-blue-1">
+          <p className="w-full text-blue-1">
             Stay in the loop with latest{" "}
             <span className="text-green-1">courses</span> and updates
           </p>

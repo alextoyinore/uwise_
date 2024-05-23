@@ -56,26 +56,26 @@ const CourseCard = ({
             {lastName.charAt(0)}
           </div>
         )} */}
-        <div className="flex flex-col">
-          <p className="text-sm text-blue-1">
+        <div className="flex flex-col text-[12px]">
+          <p className="text-blue-1">
             {firstName} {lastName}
           </p>
-          <p className="text-[12px] text-green-1">{organization}</p>
+          <p className=" text-green-1">{organization}</p>
         </div>
       </div>
-      <p className="text-gray-700 text-sm font-semibold leading-5">
+      <p className="text-gray-700 text-[13px] font-semibold leading-5">
         {/* Maximum of 65 characters to be set on this */}
         {courseTitle}
       </p>
       {/* <hr className="my-2" />
       <p className="text-sm">{description}</p> */}
-      <p className="flex items-center text-sm text-gray-500">
+      <p className="flex items-center text-[13px] text-gray-500">
         Rating: {Math.fround(rating)} &nbsp;
         {Array.from({ length: Math.floor(rating) }).map((_, index) => (
           <Star key={index} width={15} height={15} color="green" />
         ))}
       </p>
-      <p className="text-red-1  text-[16px] ">&#8358;{price.toString()}</p>
+      <p className="text-red-1  text-[13px] ">&#8358;{price.toString()}</p>
     </Link>
   );
 };

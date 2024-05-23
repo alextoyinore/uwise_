@@ -83,7 +83,7 @@ const Sidebar = () => {
         <div className="p-3">
           <Link
             href="/request"
-            className="text-md font-bold text-gray-500 cursor-pointer"
+            className="text-md font-bold text-gray-700 cursor-pointer"
           >
             Latest Requests
           </Link>
@@ -114,7 +114,7 @@ const Sidebar = () => {
        * NEWSLETTER
        */}
 
-      <section className="text-gray-400 my-5 p-3 border-[1px] border-gray-50 rounded-xl">
+      <section className="text-gray-400 my-5 p-3 border-[1px] text-lg border-gray-50 rounded-xl">
         <Newsletter />
       </section>
 

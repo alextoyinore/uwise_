@@ -9,7 +9,7 @@ export const biginfos = [
         image: 'teach',
         description: 'Teach on Uwise and earn money with your skills',
         listItem: [
-            'We provide the tools for you to impact your wealth of knowledge and expertise',
+            'We provide the tools for you to impact your wealth of knowledge',
             'Gain industry recognition and authority by teaching what you know'
         ]
     },
