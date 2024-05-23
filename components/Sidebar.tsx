@@ -5,10 +5,16 @@ import Link from "next/link";
 import { instructors } from "@/data/local/instructors"
 import InstructorInfo from "./InstructorInfo";
 import { clients } from "@/data/local/clients";
+import Footer from "./Footer";
+import Newsletter from "./Newsletter";
+import ClientInfo from "./ClientInfo";
 
 const Sidebar = () => {
   return (
-    <div className="max-h-screen">
+    <div className="">
+      {/**
+       * TOP INSTRUCTORS
+       */}
       <section className="border-[1px] border-gray-50 rounded-xl mb-5">
         <div className="p-3">
           <Link
@@ -20,7 +26,7 @@ const Sidebar = () => {
         </div>
         <div className="">
           {instructors.map((instructor, index) => (
-            <div key={index} className="hover:bg-gray-50">
+            <div key={index} className="hover:bg-gray-100 hover:rounded-lg">
               <div className="flex flex-col gap-1 cursor-pointer p-3">
                 <InstructorInfo
                   firstName={instructor.firstName}
@@ -37,11 +43,14 @@ const Sidebar = () => {
         </div>
       </section>
 
+      {/**
+       * TOP CLIENTS
+       */}
 
-      <section className="border-[1px] border-gray-50 rounded-xl mb-5">
+      <section className="border-[1px] border-gray-100 rounded-xl mb-5">
         <div className="p-3">
           <Link
-            href="/instructor"
+            href="/client"
             className="text-md font-bold text-gray-700 cursor-pointer"
           >
             Top Clients
@@ -49,9 +58,9 @@ const Sidebar = () => {
         </div>
         <div className="">
           {clients.map((client, index) => (
-            <div key={index} className="hover:bg-gray-50">
+            <div key={index} className="hover:bg-gray-100 hover:rounded-lg">
               <div className="flex flex-col gap-1 cursor-pointer p-3">
-                <InstructorInfo
+                <ClientInfo
                   firstName={client.firstName}
                   lastName={client.lastName}
                   rating={client.rating}
@@ -66,11 +75,15 @@ const Sidebar = () => {
         </div>
       </section>
 
+      {/**
+       * LATEST REQUESTS
+       */}
+
       <section className="border-[1px] border-gray-50 rounded-xl my-5">
         <div className="p-3">
           <Link
             href="/request"
-            className="text-md font-bold text-gray-700 cursor-pointer"
+            className="text-md font-bold text-gray-500 cursor-pointer"
           >
             Latest Requests
           </Link>
@@ -78,7 +91,7 @@ const Sidebar = () => {
 
         <div className="">
           {requests.map((request, index) => (
-            <div key={index} className="hover:bg-gray-50">
+            <div key={index} className="hover:bg-gray-100 hover:rounded-lg">
               <div className="flex flex-col gap-1 cursor-pointer p-3">
                 <Request
                   logoUrl={request.logoUrl}
@@ -96,6 +109,21 @@ const Sidebar = () => {
           ))}
         </div>
       </section>
+
+      {/**
+       * NEWSLETTER
+       */}
+
+      <section className="text-gray-400 my-5 p-3 border-[1px] border-gray-50 rounded-xl">
+        <Newsletter />
+      </section>
+
+      {/**
+       * FOOTER
+       */}
+       <section className="text-gray-400 my-5 p-3 border-[1px] border-gray-50 rounded-xl">
+        <Footer />
+       </section>
     </div>
   );
 };

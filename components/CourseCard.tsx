@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Star } from "lucide-react";
 import Link from "next/link";
+import { NumberFormatter } from "react-number-formatter";
 
 interface CourseCardProps {
   logoUrl?: string;
@@ -13,7 +14,7 @@ interface CourseCardProps {
   rating: number;
   price: number;
   link: string;
-  image: string
+  image: string;
 }
 
 const CourseCard = ({
@@ -26,14 +27,14 @@ const CourseCard = ({
   rating,
   price,
   link,
-  image
+  image,
 }: CourseCardProps) => {
   return (
     <Link
       href={link}
-      className="w-[200px] h-auto flex flex-col gap-2 rounded-xl cursor-pointer"
+      className="w-full h-auto flex flex-col gap-2 rounded-xl cursor-pointer"
     >
-      <Image 
+      <Image
         className="rounded-lg mb-2 object-cover w-[200px] h-[130px]"
         src={image}
         alt={image}
@@ -74,7 +75,7 @@ const CourseCard = ({
           <Star key={index} width={15} height={15} color="green" />
         ))}
       </p>
-      <p className="text-red-1  text-[16px] ">&#8358; {price.toString()}</p>
+      <p className="text-red-1  text-[16px] ">&#8358;{price.toString()}</p>
     </Link>
   );
 };

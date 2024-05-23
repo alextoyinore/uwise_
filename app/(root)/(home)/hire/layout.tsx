@@ -7,7 +7,6 @@ export default function HireLayout({
 }) {
   return (
     <div className="m-[auto] min-h-[50vh]">
-      <AuthNav />
       {children}
     </div>
   );

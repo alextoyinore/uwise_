@@ -22,8 +22,8 @@ const InstructorInfo = ({
 }: InstructorInfoProps) => {
   return (
     <Link
-      href={'instructor'+link}
-      className="w-[200px] h-auto flex flex-col gap-2 rounded-xl cursor-pointer"
+      href={'/instructor/'+link}
+      className="h-auto flex flex-col gap-2 rounded-xl cursor-pointer"
     >
       <div className="flex gap-2 content-center">
         {image ? (
@@ -40,12 +40,12 @@ const InstructorInfo = ({
             {lastName.charAt(0)}
           </div>
         )}
-        <div className="flex flex-col">
-          <p className="text-sm text-blue-1 font-bold">
+        <div className="flex flex-col text-[12px]">
+          <p className=" text-blue-1 font-semibold">
             {firstName} {lastName}
           </p>
-          <p className="text-[12px] text-green-1">{organization}</p>
-          <p className="flex items-center text-[12px] text-gray-500">
+          <p className=" text-green-1">{organization}</p>
+          <p className="flex items-center text-gray-500">
             Rating: {Math.fround(rating)} &nbsp;
             {Array.from({ length: Math.floor(rating) }).map((_, index) => (
               <Star key={index} width={12} height={12} color="green" />

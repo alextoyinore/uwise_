@@ -1,11 +1,13 @@
 import BigInfo from "@/components/BigInfo";
+import BlogCard from "@/components/BlogCard";
 import CategoryCard from "@/components/CategoryCard";
 import CourseCard from "@/components/CourseCard";
 import Hero from "@/components/Hero";
 import { biginfos } from "@/data/local/biginfo";
+import { blogs } from "@/data/local/blogs";
 import { categories } from "@/data/local/categories";
 import { courses } from "@/data/local/courses";
-import { Link, Aperture, Layers, Group } from "lucide-react";
+import { Link, Aperture, Layers, Group, Rss } from "lucide-react";
 import React from "react";
 
 
@@ -28,7 +30,7 @@ const Home = () => {
 
           <div className="flex flex-wrap my-5 gap-6">
             {courses.map((course, index) => (
-              <div key={index} className="">
+              <div key={index} className="w-[23%]">
                 <CourseCard
                   logoUrl={course.logoUrl}
                   firstName={course.firstName}
@@ -93,6 +95,32 @@ const Home = () => {
                 description={info.description}
                 listItem={info.listItem} 
                 link={info.link}              
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/**
+       * LATEST BLOGS
+       */}
+       <section className="my-10">
+        <Link href={"/blog"}>
+          <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
+            <Rss /> Latest Blog
+          </h2>
+        </Link>
+
+        <div className="flex flex-wrap gap-5 my-5">
+          {blogs.map((blog, index) => (
+            <div key={index} className="w-[23%]">
+              <BlogCard
+                title={blog.title}
+                excerpt={blog.excerpt}
+                author={blog.author}
+                month={blog.month}
+                year={blog.year}
+                link={blog.link}
               />
             </div>
           ))}

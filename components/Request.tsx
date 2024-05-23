@@ -45,8 +45,8 @@ const Request = ({
           <span className="font-bold">{firstName} {lastName}</span> &nbsp;
           <span className="text-[12px] text-green-1">{location}</span> &nbsp;
           <span className="text-[12px] text-gray-700">
-            Wants to learn: <span className="font-semibold">{requested}</span>. Budget:{" "}
-            <b className="text-red-1">&#8358; {budget}</b>
+            Wants to learn: <span className="">{requested}</span>. Budget:{" "}
+            <span className="text-red-1">&#8358;{budget}</span>
           </span>
         </p>
       </div>
