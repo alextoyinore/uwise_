@@ -28,7 +28,7 @@ export default function Navbar() {
         {/**
          * Nav Links
          */}
-        <div className="flex flex-col gap-1 text-[14px] text-gray-600 font-thin">
+        <div className="flex flex-col gap-1 text-[14px] text-gray-600">
           {navlinks.map((navlink, index) => (
             <NavLink
               key={index}

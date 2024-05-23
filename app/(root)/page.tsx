@@ -104,7 +104,7 @@ const Home = () => {
       {/**
        * LATEST BLOGS
        */}
-       <section className="my-10">
+       <section className="my-5">
         <Link href={"/blog"}>
           <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
             <Rss /> Latest Blog
