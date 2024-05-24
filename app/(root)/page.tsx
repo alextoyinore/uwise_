@@ -22,11 +22,11 @@ const Home = () => {
 
       <section className="flex flex-col my-5">
         <div className="">
-          <Link href={"/explore"}>
+          <a href={"/explore"}>
             <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
               <Aperture /> Explore
             </h2>
-          </Link>
+          </a>
 
           <div className="flex flex-wrap my-5 gap-6">
             {courses.map((course, index) => (
@@ -54,11 +54,11 @@ const Home = () => {
        */}
 
       <section className="my-5">
-        <Link href={"/explore/categories"}>
+        <a href={"/explore/categories"}>
           <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
             <Layers /> Categories
           </h2>
-        </Link>
+        </a>
 
         <div className="flex flex-wrap gap-5 my-5">
           {categories.map((category, index) => (
@@ -76,12 +76,13 @@ const Home = () => {
       {/**
        * BIG INFO
        */}
-      <section className="my-5">
-        <Link href={""}>
+      <section className="my-10">
+        <a href={""}>
           <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
-            <Group /> Do More with Uwise
+            {/* <Group />  */}
+            Do More with Uwise
           </h2>
-        </Link>
+        </a>
 
         <div className="flex gap-5 my-5">
           {biginfos.map((info, index) => (
@@ -105,11 +106,11 @@ const Home = () => {
        * LATEST BLOGS
        */}
        <section className="my-5">
-        <Link href={"/blog"}>
+        <a href={"/blog"}>
           <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
             <Rss /> Latest Blog
           </h2>
-        </Link>
+        </a>
 
         <div className="flex flex-wrap gap-5 my-5">
           {blogs.map((blog, index) => (

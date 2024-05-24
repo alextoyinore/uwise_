@@ -8,14 +8,14 @@ const Categories = () => {
     <div>
       {exploreCategories.map((item, index) => (
         <section key={index} className="my-5">
-          <Link className="my-5" href={item.subjectlink}>
+          <a className="my-5" href={item.subjectlink}>
             <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
               {/* <Layers /> Categories */}
               {item.subject}
             </h2>
-          </Link>
+          </a>
 
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap gap-5 mt-5 mb-10">
             {item.categories.map((category, index) => (
               <div key={index}>
                 <CategoryCard

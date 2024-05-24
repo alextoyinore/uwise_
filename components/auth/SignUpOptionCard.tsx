@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 interface SignUpOptionCardProps {
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   className?: string;
   checkStyle?: string;
   onClick?: () => void;
@@ -21,17 +21,17 @@ const SignUpOptionCard = ({
     <div
       onClick={onClick}
       className={cn(
-        "flex flex-col rounded-lg p-5 border-2 cursor-pointer border-gray-700 text-gray-700",
+        "rounded-lg p-2 border-[1px] cursor-pointer border-gray-300 text-gray-500",
         className
       )}
     >
-      <div className="flex justify-between mb-10">
+      <div className="flex justify-between gap-2 align-top">
         {icon}
-        <div className={cn("center rounded-full p-1 bg-gray-100", checkStyle)}>
-          <Check className="w-[30px] h-[30px]" />
+        <span className="text-sm text-center">{title}</span>
+        <div className={cn("max-w-[25px] max-h-[25px] center rounded-full p-1 bg-gray-100", checkStyle)}>
+          <Check size={15} className="" />
         </div>
       </div>
-      <p className="text-2xl text-center">{title}</p>
     </div>
   );
 };

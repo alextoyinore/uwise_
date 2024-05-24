@@ -6,9 +6,14 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="m-[auto] min-h-[50vh]">
-      <AuthNav />
-      {children}
+    <div
+      className="h-screen w-screen flex justify-center items-center"
+      style={{ backgroundImage: "url('/authbg2.svg')", objectFit: "contain" }}
+    >
+      <div className="w-1/2 z-10 border-[1px]  bg-white p-5 rounded-2xl">
+        {children}
+      </div>
     </div>
   );
 }
+

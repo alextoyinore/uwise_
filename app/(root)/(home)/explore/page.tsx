@@ -12,11 +12,11 @@ const ExploreHome = () => {
 
       {explorelist.map((item, index) => (
         <section key={index} className="flex flex-col">
-          <Link href={item.subjectlink}>
+          <a href={item.subjectlink}>
             <p className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
               {item.subject}
             </p>
-          </Link>
+          </a>
 
           <div className="flex flex-wrap my-5 gap-6">
             {item.courses.map((course, index) => (

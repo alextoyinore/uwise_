@@ -16,7 +16,7 @@ import React from "react";
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex justify-between">
+    <div className="w-[95%] m-[auto] flex justify-between">
       <div className="fixed h-screen w-[13%] px-2 border-r-[1px] border-gray-50 overflow-y-auto">
         <Navbar />
       </div>

@@ -10,18 +10,21 @@ const RequestHome = () => {
     <div>
       <p className="text-gray-400 my-3">Total Requests: {requests.length}</p>
       <div className="w-full flex flex-col">
-        {/* <Link href={"/request"}>
-      <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
-        <MessageCircleQuestion /> Requests
-      </h2>
-    </Link> */}
+        {/* <a href={"/request"}>
+          <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
+            <MessageCircleQuestion /> Requests
+          </h2>
+        </a> */}
 
         {requests.map((request, index) => (
           <div
             key={index}
-            className={cn("cursor-pointer p-4 border-b-[1px] border-gray-50 hover:bg-gray-50", {
-              "bg-white": index % 2 == 0,
-            })}
+            className={cn(
+              "cursor-pointer p-4 border-b-[1px] border-gray-50 hover:bg-gray-50",
+              {
+                "bg-white": index % 2 == 0,
+              }
+            )}
           >
             <RequestItem
               logoUrl={request.logoUrl}
