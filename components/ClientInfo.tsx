@@ -21,7 +21,7 @@ const ClientInfo = ({
   image,
 }: ClientInfoProps) => {
   return (
-    <Link
+    <a
       href={'/client/'+link}
       className="h-auto flex flex-col gap-2 rounded-xl cursor-pointer"
     >
@@ -53,7 +53,7 @@ const ClientInfo = ({
           </p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 

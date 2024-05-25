@@ -6,8 +6,9 @@ export default function HireLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="m-[auto] min-h-[50vh]">
-      {children}
+    <div className="w-full flex flex-col h-screen">
+      <div className="w-full">{children}</div>
     </div>
   );
 }
+

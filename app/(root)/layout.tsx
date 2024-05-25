@@ -1,8 +1,12 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import SearchBar from "@/components/SearchBar";
 import Sidebar from "@/components/Sidebar";
 import Tablink from "@/components/Tablink";
+import { hiretabs } from "@/data/local/hiretab";
 import { tablinks } from "@/data/local/tablinks";
+import { cn } from "@/lib/utils";
 import {
   Aperture,
   Briefcase,
@@ -12,9 +16,12 @@ import {
   Rss,
 } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
+  const pathname = usePathname();
+
   return (
     <div className="w-[95%] m-[auto] flex justify-between">
       <div className="fixed h-screen w-[13%] px-2 border-r-[1px] border-gray-50 overflow-y-auto">
@@ -51,6 +58,26 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
             </div>
           </div>
         </div>
+
+        {pathname.includes("hire") ? (
+          <div className="flex text-center">
+            {hiretabs.map((tab, index) => (
+              <a
+                key={index}
+                href={tab.link}
+                className={cn(
+                  "w-1/2 py-1 text-gray-600 hover:bg-green-1/5 hover:text-green-1",
+                  {
+                    "bg-green-1/5 text-green-1":
+                      pathname === tab.link,
+                  }
+                )}
+              >
+                {tab.title}
+              </a>
+            ))}
+          </div>
+        ) : null}
 
         <div className="p-5">{children}</div>
       </div>
