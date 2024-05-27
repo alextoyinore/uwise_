@@ -10,7 +10,9 @@
         price: 50000,
         link: '/course/graphics-design-introduction-elements-theories-business',
         organization: 'Uwise Learning',
-        image: '/images/courses/1.jpg'
+        image: '/images/courses/1.jpg',
+        editLink: '/teach/edit/graphics-design-introduction-elements-theories-business',
+        category: 'creative'
     },
     {
         id: 2,
@@ -23,7 +25,9 @@
         price: 100000,
         link: '/course/cybersecurity-in-2024-fundamentals-and-latest-tends-in-securing-digital-space',
         organization: 'Lagos Tech School',
-        image: '/images/courses/2.jpg'
+        image: '/images/courses/2.jpg',
+        editLink: '/teach/edit/cybersecurity-in-2024-fundamentals-and-latest-tends-in-securing-digital-space',
+        category: 'cyber security'
     },
     {
         id: 3,
@@ -36,7 +40,9 @@
         price: 80000,
         link: '/course/music-of-the-21st-century-afrobeats',
         organization: 'Shade Adu Music School',
-        image: '/images/courses/3.jpg'
+        image: '/images/courses/3.jpg',
+        editLink: '/teach/edit/music-of-the-21st-century-afrobeats',
+        category: 'music'
     },
     {
         id: 4,
@@ -49,7 +55,9 @@
         price: 200000,
         link: '/course/business-administration-and-human-resources-management',
         organization: 'David Dawson School of Business',
-        image: '/images/courses/4.jpg'
+        image: '/images/courses/4.jpg',
+        editLink: '/teach/edit/business-administration-and-human-resources-management',
+        category: 'business'
     },
     {
         id: 5,
@@ -62,7 +70,9 @@
         price: 120000,
         link: '/course/french-for-beginners-intermediate-speakers-and-advanced-learners',
         organization: 'Fan Augustine Language School',
-        image: '/images/courses/5.jpg'
+        image: '/images/courses/5.jpg',
+        editLink: '/teach/edit/french-for-beginners-intermediate-speakers-and-advanced-learners',
+        category: 'language'
     },
     {
         id: 6,
@@ -73,22 +83,26 @@
         description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
         rating: 4,
         price: 50000,
-        link: '/course/french-for-beginners-intermediate-speakers-and-advanced-learners',
+        link: '/course/building-restful-apis-with-django-rest-framework',
         organization: 'David Shwimmer Coding School',
-        image: '/images/courses/6.jpg'
+        image: '/images/courses/6.jpg',
+        editLink: '/teach/edit/building-restful-apis-with-django-rest-framework',
+        category: 'software'
     },
     {
         id: 7,
         // logoUrl: '/images/uwise.svg',
         firstName: 'Fan',
         lastName: 'Augustine',
-        courseTitle: 'Cybersecurity Fundamentals: Introduction to Information Security',
+        courseTitle: 'Introducing Generative AI with AWS',
         description: 'This course of for non-aboriginals of French. A powerful introduction to the French language, culture, and customs',
         rating: 5,
         price: 150000,
-        link: '/course/french-for-beginners-intermediate-speakers-and-advanced-learners',
+        link: '/course/introducing-generative-ai-with-aws',
         organization: 'Fan Augustine Language School',
-        image: '/images/courses/7.jpg'
+        image: '/images/courses/7.jpg',
+        editLink: '/teach/edit/introducing-generative-ai-with-aws',
+        category: 'ai'
     },
     {
         id: 8,
@@ -101,7 +115,9 @@
         price: 70000,
         link: '/course/advanced-django-for-web-developers',
         organization: 'Caleb Omojuwa School',
-        image: '/images/courses/8.jpg'
+        image: '/images/courses/8.jpg',
+        editLink: '/teach/edit/advanced-django-for-web-developers',
+        category: 'ai'
     }
 ]
 
