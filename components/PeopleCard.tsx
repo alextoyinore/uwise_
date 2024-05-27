@@ -46,7 +46,7 @@ const PeopleCard = ({
           </div>
         )}
         <div className="flex flex-col">
-          <p className="text-lg text-blue-1 font-semibold">
+          <p className="text-lg text-blue-1">
             {firstName} {lastName}
           </p>
           <p>{designation}</p>

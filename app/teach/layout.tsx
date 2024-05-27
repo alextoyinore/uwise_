@@ -6,18 +6,18 @@ import Logo from "@/public/images/logo.svg";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-const partnershipRoutes = [
+const teachRoutes = [
   {
     title: "New",
-    link: "/teach/new",
+    link: "new",
   },
   {
     title: "Courses",
-    link: "/teach/courses",
+    link: "course",
   },
   {
     title: "Collaborate",
-    link: "/teach/collab",
+    link: "collab",
   },
 ];
 
@@ -36,15 +36,15 @@ const TeachLayout = ({ children }: { children: React.ReactNode }) => {
             <p className="text-[12px] text-gray-400 my-1">Teach</p>
           </a>
           <hr className="my-3" />
-          {partnershipRoutes.map((item, index) => (
+          {teachRoutes.map((item, index) => (
             <a
               key={index}
-              href={item.link}
+              href={'/teach/' + item.link}
               className={cn(
                 "p-2 text-sm hover:bg-green-1/5 hover:text-green-1 rounded-full text-gray-500",
                 {
                   "bg-green-1/5 text-green-1":
-                     pathname.includes(item.title.toLowerCase())
+                     pathname.includes(item.link)
                 }
               )}
             >
@@ -52,7 +52,7 @@ const TeachLayout = ({ children }: { children: React.ReactNode }) => {
             </a>
           ))}
         </div>
-        <div className="w-[85%] overflow-auto relative">{children}</div>
+        <div className="w-[85%] overflow-auto relative px-3">{children}</div>
       </div>
     </div>
   );

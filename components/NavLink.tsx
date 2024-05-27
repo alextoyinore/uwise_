@@ -25,8 +25,8 @@ const NavLink = ({ title, icon, link }: NavLinkProps) => {
   return (
     <a
       className={cn(
-        "hover:text-blue-1 hover:bg-blue-1/5 hover:rounded-full hover:font-bold p-2 flex gap-1 items-center",
-        { "bg-blue-1/5 rounded-full font-bold text-blue-1": link === pathname }
+        "hover:text-blue-1 hover:bg-blue-1/5 hover:rounded-full p-2 flex gap-1 items-center",
+        { "bg-blue-1/5 rounded-full text-blue-1": link === pathname }
       )}
       href={link}
     >
