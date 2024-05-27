@@ -23,7 +23,7 @@ const NavLink = ({ title, icon, link }: NavLinkProps) => {
   const pathname = usePathname();
 
   return (
-    <Link
+    <a
       className={cn(
         "hover:text-blue-1 hover:bg-blue-1/5 hover:rounded-full hover:font-bold p-2 flex gap-1 items-center",
         { "bg-blue-1/5 rounded-full font-bold text-blue-1": link === pathname }
@@ -31,9 +31,7 @@ const NavLink = ({ title, icon, link }: NavLinkProps) => {
       href={link}
     >
       {icon} {title}
-    </Link>
-
-    // </div>
+    </a>
   );
 };
 

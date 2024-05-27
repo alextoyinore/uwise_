@@ -22,9 +22,9 @@ export default function Navbar() {
   return (
     <nav className="flex flex-col min-h-screen justify-between py-5">
       <div className="flex flex-col">
-        <Link href={"/"} className="cursor-pointer mb-5">
+        <a href={"/"} className="cursor-pointer mb-5">
           <Image src={Logo} alt="logo" width={100} height={35} />
-        </Link>
+        </a>
         {/**
          * Nav Links
          */}
@@ -40,17 +40,17 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <Link
+        <a
           href={"/login"}
           className="cursor-pointer bg-transparent text-green-1 text-[14px] p-2 font-bold hover:bg-green-1/5 hover:rounded-full"
         >
           Sign in
-        </Link>
-        <Link href={"/signup"}>
+        </a>
+        <a href={"/signup"}>
           <Button className="bg-gradient-to-r w-full from-green-1 to-blue-1 text-white text-[14px] rounded-full">
             Create Account
           </Button>
-        </Link>
+        </a>
       </div>
     </nav>
   );

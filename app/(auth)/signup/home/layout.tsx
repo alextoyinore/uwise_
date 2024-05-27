@@ -15,7 +15,7 @@ const SignupLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="flex items-center m-5">
       <div className="flex flex-col justify-center gap-3 w-1/2 px-5 border-r-[1px]">
         <a
-          className="flex items-center text-[12px] gap-1 mb-5 text-green-1 hover:text-blue-1"
+          className="flex items-center align-middle text-[13px] gap-1 mb-5 text-green-1 hover:text-blue-1"
           href="/signup"
         >
           <Home size={15} /> <span>Home</span>
