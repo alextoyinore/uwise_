@@ -12,7 +12,7 @@ interface BlogInfo {
 
 const BlogCard = ({ title, excerpt, author, month, year, link }: BlogInfo) => {
   return (
-    <Link
+    <a
       href={"/blog/" + link}
       className="flex flex-col gap-2 justify-between h-[180px] rounded-lg p-5 cursor-pointer border-[1px]"
     >
@@ -25,7 +25,7 @@ const BlogCard = ({ title, excerpt, author, month, year, link }: BlogInfo) => {
         <span className="text-red-1">{author}</span>
         {month} {year}
       </p>
-    </Link>
+    </a>
   );
 };
 
