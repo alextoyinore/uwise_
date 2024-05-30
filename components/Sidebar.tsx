@@ -11,7 +11,7 @@ import ClientInfo from "./ClientInfo";
 
 const Sidebar = () => {
   return (
-    <div className="">
+    <div className="sidebar">
       {/**
        * TOP INSTRUCTORS
        */}

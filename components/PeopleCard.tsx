@@ -46,15 +46,15 @@ const PeopleCard = ({
           </div>
         )}
         <div className="flex flex-col">
-          <p className="text-lg text-blue-1">
+          <p className="text-lg text-gray-700">
             {firstName} {lastName}
           </p>
           <p>{designation}</p>
-          <p className="text-green-1">{organization}</p>
+          <p className="text-gray-400">{organization}</p>
           <p className="flex items-center justify-center text-gray-500">
             Rating: {Math.fround(rating)} &nbsp;
             {Array.from({ length: Math.floor(rating) }).map((_, index) => (
-              <Star key={index} width={12} height={12} color="green" />
+              <Star key={index} width={12} height={12} color="gray" />
             ))}
           </p>
         </div>

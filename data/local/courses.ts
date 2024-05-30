@@ -19,7 +19,7 @@
         logoUrl: '/images/uwise_b.svg',
         firstName: 'Ademola',
         lastName: 'Bumbo',
-        courseTitle: 'Cybersecurity in 2024: Fundamentals and Latest Trends in Securing Digital Space',
+        courseTitle: 'Cybersecurity in 2024: Fundamentals and Latest Trends',
         description: 'This course will introduce you the the fundamentals of Cybersecurity and latest rends in securing the digital space',
         rating: 4,
         price: 100000,

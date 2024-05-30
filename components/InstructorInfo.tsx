@@ -41,14 +41,14 @@ const InstructorInfo = ({
           </div>
         )}
         <div className="flex flex-col text-[12px]">
-          <p className=" text-blue-1 font-semibold">
+          <p className=" text-gray-700 font-semibold">
             {firstName} {lastName}
           </p>
-          <p className=" text-green-1">{organization}</p>
+          <p className=" text-gray-400">{organization}</p>
           <p className="flex items-center text-gray-500">
             Rating: {Math.fround(rating)} &nbsp;
             {Array.from({ length: Math.floor(rating) }).map((_, index) => (
-              <Star key={index} width={12} height={12} color="green" />
+              <Star key={index} width={12} height={12} color="gray" />
             ))}
           </p>
         </div>

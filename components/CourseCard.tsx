@@ -30,12 +30,12 @@ const CourseCard = ({
   image,
 }: CourseCardProps) => {
   return (
-    <Link
+    <a
       href={link}
       className="w-full h-auto flex flex-col gap-2 rounded-xl cursor-pointer"
     >
       <Image
-        className="rounded-lg mb-2 object-cover w-[200px] h-[130px]"
+        className="rounded-lg mb-2 object-cover h-[120px]"
         src={image}
         alt={image}
         width={200}
@@ -57,13 +57,13 @@ const CourseCard = ({
           </div>
         )} */}
         <div className="flex flex-col text-[12px]">
-          <p className="text-blue-1">
+          <p className="text-gray-700">
             {firstName} {lastName}
           </p>
-          <p className=" text-green-1">{organization}</p>
+          <p className=" text-gray-400">{organization}</p>
         </div>
       </div>
-      <p className="text-gray-700 text-[13px] font-semibold leading-5">
+      <p className="text-black text-[13px] font-semibold leading-5">
         {/* Maximum of 65 characters to be set on this */}
         {courseTitle}
       </p>
@@ -72,11 +72,11 @@ const CourseCard = ({
       <p className="flex items-center text-[13px] text-gray-500">
         Rating: {Math.fround(rating)} &nbsp;
         {Array.from({ length: Math.floor(rating) }).map((_, index) => (
-          <Star key={index} width={15} height={15} color="green" />
+          <Star key={index} width={15} height={15} color="gray" />
         ))}
       </p>
-      <p className="text-red-1  text-[13px] ">&#8358;{price.toString()}</p>
-    </Link>
+      {/* <p className="text-blue-1  text-[13px] ">&#8358;{price.toString()}</p> */}
+    </a>
   );
 };
 

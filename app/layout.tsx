@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: '--font-ibm-plex-serif'
+});
 
 export const metadata: Metadata = {
   title: "Uwise",
   description: "Ed-commerce for skill and knowledge sharing",
+  icons: '/icon.svg'
 };
 
 export default function RootLayout({
@@ -18,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>
         <div className="min-h-screen">{children}</div>
       </body>
     </html>

@@ -47,7 +47,7 @@ const TeachLayout = ({ children }: { children: React.ReactNode }) => {
               className={cn(
                 "p-2 text-sm hover:bg-green-1/5 hover:text-green-1 rounded-full text-gray-500",
                 {
-                  "bg-green-1/5 text-green-1": pathname.includes(item.link) && pathname !== '',
+                  "bg-green-1/5 text-green-1": pathname.includes(item.link) && item.link !== '',
                 }
               )}
             >

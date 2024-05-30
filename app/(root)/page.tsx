@@ -28,7 +28,7 @@ const Home = () => {
             </h2>
           </a>
 
-          <div className="flex flex-wrap my-5 gap-6">
+          <div className="flex flex-wrap my-5 gap-5">
             {courses.map((course, index) => (
               <div key={index} className="w-[23%]">
                 <CourseCard
@@ -78,7 +78,7 @@ const Home = () => {
        */}
       <section className="my-10">
         <a href={""}>
-          <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
+          <h2 className="text-gray-700 flex items-center gap-2 font-bold text-xl hover:text-blue-1">
             {/* <Group />  */}
             Do More with Uwise
           </h2>

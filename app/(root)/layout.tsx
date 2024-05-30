@@ -24,10 +24,10 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="w-[95%] m-[auto] flex justify-between">
-      <div className="fixed h-screen w-[13%] px-2 border-r-[1px] border-gray-50 overflow-y-auto">
+      <div className="fixed h-screen w-[15%] px-5 border-r-[1px] border-gray-50 overflow-y-auto">
         <Navbar />
       </div>
-      <div className="left-[15.5%] sticky flex flex-col min-h-screen w-[66.5%]">
+      <div className="left-[17.5%] sticky flex flex-col min-h-screen w-[64.2%]">
         <div className="flex flex-col">
           {/**
            * Center Column
