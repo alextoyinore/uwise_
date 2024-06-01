@@ -42,7 +42,7 @@ const BigInfo = ({
           width={imageWidth}
           height={imageHeight}
         />
-        <div className="flex flex-col p-5 rounded-r-2xl">
+        <div className="flex flex-col p-5 rounded-r-2xl bg-white">
           <p className="text-blue-1 text-sm font-semibold leading-6">
             {description}
           </p>

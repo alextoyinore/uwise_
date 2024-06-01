@@ -13,7 +13,7 @@ const CategoryCard = ({ title, link, icon }: CategoryCardProps) => {
   return (
     <Link
       href={link}
-      className="bg-transparent px-5 py-2 rounded-md flex gap-2 items-center text-gray-700 border-[1px] text-sm text-center  hover:text-blue-1 hover:border-blue-1"
+      className="bg-green-1/20 px-5 py-2 border-green-1/50 rounded-md flex gap-2 items-center text-black border-[1px] text-sm text-center  hover:text-white hover:bg-green-1/50"
     >
       {/* <Image
         className="h-[25px] w-[25px]"

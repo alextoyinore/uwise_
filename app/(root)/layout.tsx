@@ -23,7 +23,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
 
   return (
-    <div className="w-[95%] m-[auto] flex justify-between">
+    <div className="w-[95%] m-[auto] flex justify-between scroll-smooth">
       <div className="fixed h-screen w-[15%] px-5 border-r-[1px] border-gray-50 overflow-y-auto">
         <Navbar />
       </div>
@@ -34,8 +34,8 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
            */}
           {/* Search Bar */}
           <div className="py-3 border-b-[1px] border-gray-50 w-full">
-            <div className="m-[auto] w-[95%] flex gap-5">
-              <h1 className="w-[20%] text-blue-1 text-sm leading-5">
+            <div className="m-[auto] w-[95%] flex gap-5 items-center">
+              <h1 className="w-[20%] text-blue-1 text-sm font-bold leading-4">
                 Find a course or post a new request
               </h1>
               <div className="w-[80%]">
@@ -83,7 +83,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       {/** Side Bar */}
-      <div className="w-[20%] border-l-[1px] border-gray-50 px-3 h-screen">
+      <div className="w-[20%] border-l-[1px] fixed right-0 overflow-y-auto border-gray-50 px-3 h-screen">
         <Sidebar />
       </div>
     </div>

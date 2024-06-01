@@ -6,8 +6,8 @@ export async function register(email: string, password: string, name: string) {
   try {
     const user = await account.create("unique()", email, password, name);
     login(email, password);
-    return user;
-    console.log(user);
+    // return user;
+    // console.log(user);
   } catch (error) {
     throw error;
   }
@@ -17,8 +17,9 @@ export async function register(email: string, password: string, name: string) {
 export async function login(email: string, password: string) {
   try {
     const session = await account.createEmailPasswordSession(email, password);
-    console.log(session);
-    return session;
+    // console.log(session);
+    // return session;
+    redirect('/')
   } catch (error) {
     throw error;
   }

@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="flex flex-col min-h-screen justify-between py-5">
       <div className="flex flex-col">
         <a href={"/"} className="cursor-pointer mb-5">
-          <Image src={Logo} alt="logo" width={100} height={35} />
+          <Image src={Logo} alt="logo" width={130} height={35} />
         </a>
         {/**
          * Nav Links

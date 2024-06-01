@@ -37,7 +37,7 @@ const TeachLayout = ({ children }: { children: React.ReactNode }) => {
         <div className="w-[15%] flex flex-col border-r-[1px] px-3 gap-1">
           <a className="cursor-pointer flex flex-col" href="/">
             <Image src={Logo} alt="logo" width={100} height={35} />
-            <p className="text-[12px] text-gray-400 my-1">Teach</p>
+            <p className="text-[12px] text-gray-400 my-1">Teaching Area</p>
           </a>
           <hr className="my-3" />
           {teachRoutes.map((item, index) => (

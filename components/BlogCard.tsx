@@ -14,7 +14,7 @@ const BlogCard = ({ title, excerpt, author, month, year, link }: BlogInfo) => {
   return (
     <a
       href={"/blog/" + link}
-      className="flex flex-col gap-2 justify-between h-[180px] rounded-lg p-5 cursor-pointer border-[1px]"
+      className="flex flex-col gap-2 justify-between h-[180px] rounded-lg p-5 cursor-pointer border-[1px] bg-white"
     >
       <div className="flex flex-col gap-2">
         <p className="text-sm text-blue-1 font-semibold leading-5">{title}</p>

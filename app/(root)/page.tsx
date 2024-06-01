@@ -20,10 +20,10 @@ const Home = () => {
        * LATEST COURSES
        */}
 
-      <section className="flex flex-col my-5">
+      <section className="flex flex-col my-5 bg-blue-1/5 p-5 rounded-xl">
         <div className="">
           <a href={"/explore"}>
-            <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
+            <h2 className="text-black flex items-center gap-2 hover:text-blue-1">
               <Aperture /> Explore
             </h2>
           </a>
@@ -53,9 +53,9 @@ const Home = () => {
        * CATEGORIES
        */}
 
-      <section className="my-5">
+      <section className="my-5 bg-green-1/5 p-5 rounded-xl">
         <a href={"/explore/categories"}>
-          <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
+          <h2 className="text-black flex items-center gap-2 hover:text-blue-1">
             <Layers /> Categories
           </h2>
         </a>
@@ -76,15 +76,15 @@ const Home = () => {
       {/**
        * BIG INFO
        */}
-      <section className="my-10">
+      <section className="my-10 bg-red-1/5 p-5 rounded-xl">
         <a href={""}>
-          <h2 className="text-gray-700 flex items-center gap-2 font-bold text-xl hover:text-blue-1">
+          <h2 className="flex items-center gap-2 font-bold text-xl text-blue-1">
             {/* <Group />  */}
             Do More with Uwise
           </h2>
         </a>
 
-        <div className="flex gap-5 my-5">
+        <div className="flex gap-5 mt-5">
           {biginfos.map((info, index) => (
             <div key={index} className="w-[50%]">
               <BigInfo
@@ -105,7 +105,7 @@ const Home = () => {
       {/**
        * LATEST BLOGS
        */}
-       <section className="my-5">
+       <section className="my-5 bg-blue-1/5 p-5 rounded-xl">
         <a href={"/blog"}>
           <h2 className="text-gray-700 flex items-center gap-2 hover:text-blue-1">
             <Rss /> Latest Blog

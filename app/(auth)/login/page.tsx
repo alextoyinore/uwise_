@@ -2,11 +2,27 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { getLoggedInUser } from "@/lib/appwrite";
 import { login } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Login = () => {
+  const [loggedin, setLoggedin] = useState(false);
+
+  useEffect(() => {
+    async function checkLoggedIn() {
+      const user = await getLoggedInUser();
+      if (!user) {
+        redirect("/signup");
+      } else {
+        setLoggedin(true);
+        redirect("/");
+      }
+    }
+    checkLoggedIn();
+  }, [loggedin]);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,7 +33,10 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md flex flex-col gap-3 w-1/2 px-5">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-md flex flex-col gap-3 w-1/2 px-5"
+    >
       <h2 className="text-md text-gray-600 my-2">
         Log in with your registered email
       </h2>
