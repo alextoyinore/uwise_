@@ -12,7 +12,23 @@
         organization: 'Uwise Learning',
         image: '/images/courses/1.jpg',
         editLink: '/teach/edit/graphics-design-introduction-elements-theories-business',
-        category: 'creative'
+        category: 'creative',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     },
     {
         id: 2,
@@ -27,7 +43,23 @@
         organization: 'Lagos Tech School',
         image: '/images/courses/2.jpg',
         editLink: '/teach/edit/cybersecurity-in-2024-fundamentals-and-latest-tends-in-securing-digital-space',
-        category: 'cyber security'
+        category: 'cyber security',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     },
     {
         id: 3,
@@ -42,7 +74,23 @@
         organization: 'Shade Adu Music School',
         image: '/images/courses/3.jpg',
         editLink: '/teach/edit/music-of-the-21st-century-afrobeats',
-        category: 'music'
+        category: 'music',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     },
     {
         id: 4,
@@ -57,7 +105,23 @@
         organization: 'David Dawson School of Business',
         image: '/images/courses/4.jpg',
         editLink: '/teach/edit/business-administration-and-human-resources-management',
-        category: 'business'
+        category: 'business',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     },
     {
         id: 5,
@@ -72,7 +136,23 @@
         organization: 'Fan Augustine Language School',
         image: '/images/courses/5.jpg',
         editLink: '/teach/edit/french-for-beginners-intermediate-speakers-and-advanced-learners',
-        category: 'language'
+        category: 'language',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     },
     {
         id: 6,
@@ -87,7 +167,23 @@
         organization: 'David Shwimmer Coding School',
         image: '/images/courses/6.jpg',
         editLink: '/teach/edit/building-restful-apis-with-django-rest-framework',
-        category: 'software'
+        category: 'software',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     },
     {
         id: 7,
@@ -102,7 +198,23 @@
         organization: 'Fan Augustine Language School',
         image: '/images/courses/7.jpg',
         editLink: '/teach/edit/introducing-generative-ai-with-aws',
-        category: 'ai'
+        category: 'ai',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     },
     {
         id: 8,
@@ -117,7 +229,23 @@
         organization: 'Caleb Omojuwa School',
         image: '/images/courses/8.jpg',
         editLink: '/teach/edit/advanced-django-for-web-developers',
-        category: 'ai'
+        category: 'ai',
+        skills: [
+            'Photo retouching and manipulation with Photoshop',
+            'Logo creation with Adobe Illustrator',
+            'Understanding of shapes, color, and space',
+            'Typography and choosing the right font for the job'
+        ],
+        topics: [
+            'Introduction to computer graphics',
+            'Elements of Design',
+            'Colour Theory',
+            'Typography',
+            'Cultural Nuances',
+            'Design History',
+            'Art Direction',
+            'Logos',
+        ],
     }
 ]
 

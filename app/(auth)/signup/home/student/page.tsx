@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 import { login, register } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { getLoggedInUser } from "@/lib/appwrite";
+import { signUpWithEmail } from "@/lib/appwrite_server";
 
 const StudentSignUp = () => {
   const [email, setEmail] = useState("");

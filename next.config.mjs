@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {}
+    images: {},
+    experimental: {
+        serverComponentsExternalPackages: ['node-appwrite'],
+    },
 };
 
 export default nextConfig;

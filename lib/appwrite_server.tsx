@@ -48,10 +48,10 @@ export async function getLoggedInUser() {
 }
 
 
-export async function signUpWithEmail(): Promise<void> {
+export async function signUpWithEmail(formData:FormData): Promise<void> {
   "use server";
 
-  const formData = new FormData()
+  // const formData = new FormData()
 
   const email = formData.get("email") as string | null;
   const password = formData.get("password") as string | null;
