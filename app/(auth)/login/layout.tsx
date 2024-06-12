@@ -44,7 +44,7 @@ const LoginLayout = ({ children }: { children: React.ReactNode }) => {
         <hr className="my-5" />
         <p className="text-gray-400 text-[13px]">
           Dont&apos;t have an account yet?{" "}
-          <a href={"/signup"} className="text-green-1">
+          <a href={"/signup/home/students"} className="text-green-1">
             Sign up
           </a>
         </p>

@@ -14,10 +14,10 @@ const Login = () => {
     async function checkLoggedIn() {
       const user = await getLoggedInUser();
       if (!user) {
-        redirect("/signup");
+        // redirect("/signup");
       } else {
         setLoggedin(true);
-        redirect("/");
+        // redirect("/");
       }
     }
     checkLoggedIn();

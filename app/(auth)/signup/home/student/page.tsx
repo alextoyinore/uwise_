@@ -19,13 +19,13 @@ const StudentSignUp = () => {
     e.preventDefault();
     register(email, password, firstName + " " + lastName);
     login(email, password)
-    redirect("/");
+    // redirect("/");
   };
 
   useEffect(() => {
     async function getLoggedIn() {
       const user = await getLoggedInUser();
-      if (user) redirect("/");
+      // if (user) redirect("/");
     }
     getLoggedIn();
   }, []);
