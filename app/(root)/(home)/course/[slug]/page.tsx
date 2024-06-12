@@ -61,16 +61,16 @@ const CourseDetail = () => {
             </div>
             <div className="flex flex-col mt-10 rounded-xl bg-blue-1/5 p-5 text-black gap-5">
               <h2 className="font-bold text-lg text-blue-1">What you will learn</h2>
-              <ul className="flex flex-col gap-3">
+              <div className="flex flex-wrap">
                 {c.topics.map((topic, index) => (
-                  <li
-                    className="text-[14px] text-black font-bold"
+                  <p
+                    className="text-[14px] w-1/2 text-gray-700"
                     key={index}
                   >
                     {topic}
-                  </li>
+                  </p>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         ))}
