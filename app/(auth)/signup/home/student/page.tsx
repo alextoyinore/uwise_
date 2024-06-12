@@ -22,13 +22,13 @@ const StudentSignUp = () => {
     // redirect("/");
   };
 
-  useEffect(() => {
-    async function getLoggedIn() {
-      const user = await getLoggedInUser();
-      // if (user) redirect("/");
-    }
-    getLoggedIn();
-  }, []);
+  // useEffect(() => {
+  //   async function getLoggedIn() {
+  //     const user = await getLoggedInUser();
+  //     // if (user) redirect("/");
+  //   }
+  //   getLoggedIn();
+  // }, []);
 
   return (
     <form

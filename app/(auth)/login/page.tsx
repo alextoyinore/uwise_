@@ -10,18 +10,18 @@ import React, { useEffect, useState } from "react";
 const Login = () => {
   const [loggedin, setLoggedin] = useState(false);
 
-  useEffect(() => {
-    async function checkLoggedIn() {
-      const user = await getLoggedInUser();
-      if (!user) {
-        // redirect("/signup");
-      } else {
-        setLoggedin(true);
-        // redirect("/");
-      }
-    }
-    checkLoggedIn();
-  }, [loggedin]);
+  // useEffect(() => {
+  //   async function checkLoggedIn() {
+  //     const user = await getLoggedInUser();
+  //     if (!user) {
+  //       // redirect("/signup");
+  //     } else {
+  //       setLoggedin(true);
+  //       // redirect("/");
+  //     }
+  //   }
+  //   checkLoggedIn();
+  // }, [loggedin]);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
